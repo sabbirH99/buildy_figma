@@ -95,3 +95,57 @@
     }
 
 }
+
+/* team section */
+
+@media(min-width: 576px) {
+
+    .team-people {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .team-count {
+        grid-column: span 2;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .team-people {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-count {
+        grid-column: span 3;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .team-people {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 22rem);
+    }
+
+    .team-count {
+        grid-column: span 2;
+    }
+
+    .testimonial-slider {
+        position: relative;
+        top: -12vh;
+        min-height: 25rem;
+    }
+
+    .testimony .img-box {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-right: 1px solid #bbb;
+        padding-right: 1rem;
+    }
+}

@@ -25,6 +25,10 @@ html {
     font-family: 'Euclid Circular B';
 }
 
+body {
+    background: #f5f5f5;
+}
+
 .img-fluid {
     max-width: 100%;
     max-height: 100%;
@@ -448,6 +452,40 @@ header .section-cta .cta {
     background: var(--bg-primary);
 }
 
+.our-projects-content {
+    color: var(--bg-delta);
+}
+
+.our-projects-content .section-title {
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.our-projects-content .section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-projects-content .section-text .counter {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right bottom, #f86e02 35%, #fd9502, 35%, #f97800 60%, #f68f00 60%, #f68f00 100%);
+    color: transparent;
+    background-clip: text;
+}
+
+.our-projects-content .section-text .vertical-text {
+    transform: rotate(-90deg);
+    font-size: .7rem;
+    height: max-content;
+    width: max-content;
+    padding: .5em;
+    font-weight: 400;
+    color: #bbb;
+}
+
 .owl-dots {
     height: 2px;
     background: #444;
@@ -529,3 +567,304 @@ header .section-cta .cta {
 #slider .content:hover .cta {
     left: 90%;
 }
+
+
+/* our team sectio */
+
+.our-team {
+    background: var(--bg-delta);
+}
+
+.our-team .section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.team {
+    padding: 1em;
+}
+
+.team-people {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.team-people img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-media {
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.social-profile {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    background: var(--bg-secondary);
+    padding: .5rem .8rem;
+    z-index: 1;
+    transition: .4s;
+}
+
+.social-profile .btn {
+    color: var(--bg-delta);
+    padding: .2rem;
+    text-decoration: none;
+    margin-left: .3em;
+}
+
+.social-profile .btn:hover {
+    color: var(--bg-primary);
+}
+
+.social-profile .btn i {
+    transition: .1s ease-in;
+}
+
+.social-profile .btn:hover i {
+    transform: scale(.95);
+}
+
+.team:hover .social-profile {
+    right: 0;
+}
+
+.team .team-people-info .name {
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: .4s;
+    padding-top: .4em;
+    padding-bottom: .3em;
+}
+
+
+.team .team-people-info .designation {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+.team:hover .team-people-info .name {
+    color: var(--bg-secondary);
+}
+
+.team-count {
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 20rem;
+    margin: 1rem;
+}
+
+.team-count h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.team-count h1 {
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background: url(../img/bg-texture.png);
+    background-clip: text;
+    color: transparent;
+}
+
+.team-count .cta {
+    position: absolute;
+    bottom: .8em;
+    right: 0;
+}
+
+.team-count .cta .btn {
+    color: var(--bg-delta);
+    background: var(--bg-secondary);
+    padding: .7rem 1.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: 0.4s;
+}
+
+.team-count .cta .btn i {
+    margin-left: .3rem;
+    position: absolute;
+    right: -10%;
+    padding: .3rem;
+    padding-left: 1rem;
+    transition: 0.4s;
+}
+
+.team-count .cta .btn span {
+    transition: 0.4s;
+}
+
+.team-count .cta .btn:hover span {
+    margin-right: 8px;
+}
+
+.team-count .cta .btn:hover i {
+    right: 1px;
+    transform: rotate(180deg);
+}
+
+/* testimonial section */
+
+.testimonial .video-container {
+    height: 0;
+    padding-bottom: 56.55%;
+    position: relative;
+}
+
+.testimonial .media-video {
+    background: #fff;
+}
+
+.testimonial .video-container video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+
+.testimonial .video-container .btn-play {
+    background: url(../img/Vedio_Button.png);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+}
+
+.testimonial-slider {
+    position: relative;
+    top: -10vh;
+    min-height: 35rem;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background-color: var(--bg-delta);
+    display: flex;
+    flex-direction: column;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity .4s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slider .active {
+    transition: .4s;
+    opacity: 1;
+}
+
+.slider-control {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    background: var(--bg-secondary);
+}
+
+.slider-control .btn {
+    background: transparent;
+    color: var(--bg-delta);
+    border: none;
+    padding: 1rem;
+    transition: border .3s;
+}
+
+.slider-control .btn:active {
+    background: var(--bg-secondary-omega);
+    color: var(--bg-delta);
+}
+
+.testimony  {
+    padding: 2rem;
+}
+
+.testimony .img-box {
+    margin-bottom: 1rem;
+}
+.testimony .img-box {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.testimony .img-box img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.testimony .rating {
+    color: var(--bg-secondary);
+}
+
+.testimony .review {
+    line-height: 22px;
+}
+
+.testimony .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony .info {
+    font-weight: 500;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.client-logos .img-box {
+    flex: 0 0  13rem;
+    margin: -1rem;
+}
+
+
+.client-logos .img-box img {
+    width: 100%;
+    height: 90%;
+    object-fit: fill;
+}
+
