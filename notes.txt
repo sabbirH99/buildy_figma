@@ -1,0 +1,8 @@
+:root {
+    --color-primary: #171818;
+    --color-secondary: #171818;
+    --bg-primary: #161A1E;
+    --bg-secondary: #FF5C01;
+    --bg-beta: #F5F5F5;
+}
+
