@@ -54,6 +54,10 @@ video.addEventListener("click", () => {
     playBtn.style.display = "block";
 });
 
+video.addEventListener("ended", () => {
+    playBtn.style.display = "block";
+});
+
 
 // testmonial slider
 

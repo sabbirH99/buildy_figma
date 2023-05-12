@@ -113,13 +113,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s;
 }
 
 .navbar__nav.collapse {
     top: 0;
     height: 100%;
     background: var(--bg-primary);
+    transition: all 0.4s;
 }
 
 .navbar__nav.collapse .nav-link {
@@ -573,6 +573,7 @@ header .section-cta .cta {
 
 .our-team {
     background: var(--bg-delta);
+    padding-bottom: 6rem;
 }
 
 .our-team .section-title {
@@ -592,7 +593,6 @@ header .section-cta .cta {
 
 .team-people img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -810,18 +810,20 @@ header .section-cta .cta {
     color: var(--bg-delta);
 }
 
-.testimony  {
+.testimony {
     padding: 2rem;
 }
 
 .testimony .img-box {
     margin-bottom: 1rem;
 }
+
 .testimony .img-box {
     width: 120px;
     height: 120px;
     overflow: hidden;
 }
+
 .testimony .img-box img {
     width: 100%;
     object-fit: cover;
@@ -857,7 +859,7 @@ header .section-cta .cta {
 }
 
 .client-logos .img-box {
-    flex: 0 0  13rem;
+    flex: 0 0 13rem;
     margin: -1rem;
 }
 
@@ -868,3 +870,177 @@ header .section-cta .cta {
     object-fit: fill;
 }
 
+/* news and article section */
+
+.news-articles .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.news {
+    position: relative;
+    box-shadow: 0px 10px 30px 0px #1012121A;
+    margin-bottom: 1rem;
+}
+
+.news .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--bg-delta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .8rem;
+    font-weight: 500;
+    padding-left: 2em;
+}
+
+.news img {
+    transform: scale(0);
+    transition: .4s;
+}
+
+
+.news:hover .content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.news .content .categ {
+    color: var(--bg-secondary);
+}
+
+.news:hover .content .date {
+    color: #a1a1a1;
+}
+
+.news .content .date {
+    color: #666666;
+}
+
+.news .content .btn {
+    color: #000;
+    text-decoration: none;
+}
+
+.news:hover .content .btn {
+    color: #fff;
+}
+
+.news:hover img {
+    transform: scale(1);
+}
+
+
+/* footer section */
+
+footer {
+    background: var(--color-primary);
+    color: var(--bg-beta);
+}
+
+.row.footer-top {
+    padding-bottom: 4rem;
+}
+
+.row.footer-bottom {
+    border-top: 1px solid #222222;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-top h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-top .footer-tagline {
+    color: #999999;
+    font-size: .9rem;
+}
+
+.footer-top .about-us li {
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+.footer-top .about-us li a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.footer-top .about-us li:hover a {
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.footer-top address {
+    font-style: normal;
+    color: #999999;
+}
+
+.footer-top address a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.footer-top address>* {
+    margin-bottom: .5rem;
+}
+
+.footer-top address a[href*="tel"] {
+    color: #ddd;
+}
+
+.footer-top address a[href*="mailto"] {
+    font-size: .8rem;
+}
+
+
+.footer-bottom .row [class*="col"] {
+    padding: .5rem 2rem 0;
+}
+
+footer form {
+    position: relative;
+}
+
+footer #email {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #222;
+    color: #ddd;
+    padding: .5rem 1rem;
+}
+
+footer #email::placeholder {
+    color: #ddd;
+}
+
+footer form button {
+    position: absolute;
+    right: 5px;
+    top: 26%;
+    background: none;
+    border: none;
+}
+
+footer form button i {
+    color: #fff;
+}
+
+footer .social-icons .social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+    margin-right: .5rem;
+}
+
+footer .copy {
+    font-size: .9rem;
+}

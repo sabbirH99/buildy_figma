@@ -121,6 +121,11 @@
     .team-count {
         grid-column: span 3;
     }
+
+    .c-border {
+        border-right: 1px solid #222;
+        border-left: 1px solid #222;
+    }
 }
 
 @media(min-width: 992px) {
@@ -138,7 +143,7 @@
     .testimonial-slider {
         position: relative;
         top: -12vh;
-        min-height: 25rem;
+        min-height: 20rem;
     }
 
     .testimony .img-box {
